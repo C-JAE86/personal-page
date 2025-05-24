@@ -1,0 +1,140 @@
+
+
+/* xs */
+@media (max-width: 1075px) {
+    .hero {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:1rem;
+    margin-top: 2rem;
+    
+}
+
+.hero__container {
+    /* border:1rem red solid; */
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+
+.hero__imgmobile {
+    border-radius: 30%;
+    width:10rem;
+    height:10rem;
+}
+
+.hero__imgwide{
+    display:none;
+}
+
+.hero__subtitle {
+    color:var(--clr-slate800);
+    font-size: var(--size-base);
+}
+
+.hero__title {
+    color:var(--clr-slate400);
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    text-align: center;
+}
+
+.hero__text {
+    max-width: 60ch;
+    font-size: var(--size-sm);
+    color:var(--clr-slate600);
+}
+
+.hero__contactbtn {
+    text-transform: capitalize;
+    width: 10rem;
+    text-align: center;
+}  
+}
+
+/* sm */
+/* @media (min-width: 640px) {
+
+} */
+
+/* md */
+/* @media (min-width: 768px) {
+
+} */
+
+/* lg */
+@media (min-width: 1024px) {
+    .hero {
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        gap:1rem;
+        margin-top: 2rem;
+        
+    }
+    
+    .hero__imgmobile {
+        display: none;
+    }
+
+    .hero__container {
+        /* border:1rem red solid; */
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        gap:1rem;
+    }
+    
+    .hero__imgwide {
+        border-radius: 30%;
+        width:10rem;
+        height:10rem;
+        display: inline;
+
+    }
+    
+    .hero__subtitle {
+        color:var(--clr-slate800);
+        font-size: var(--size-lg);
+    }
+    
+    .hero__title {
+        color:var(--clr-slate400);
+        text-transform: uppercase;
+        font-size: var(--size-5xl);
+        text-align: center;
+    }
+    
+    .hero__text {
+        max-width: 60ch;
+        font-size: var(--size-sm);
+        color:var(--clr-slate600);
+    }
+    
+    .hero__contactbtn {
+        text-transform: capitalize;
+        width: 10rem;
+        text-align: center;
+    }   
+
+}
+
+
+/* xl */
+/* @media (min-width: 1280px) {
+
+} */
+
+
+/* 2xl */
+/* @media (min-width: 1536px) {
+
+} */
