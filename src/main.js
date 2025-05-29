@@ -107,3 +107,19 @@ audio.addEventListener('timeupdate', () => {
 seekBar.addEventListener('input', () => {
   audio.currentTime = (seekBar.value / 100) * audio.duration;
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const contactBtn = document.getElementById('header__contact');
+  const tooltip = document.getElementById('tooltip');
+
+  contactBtn.addEventListener('mousemove', (e) => {
+    tooltip.style.left = `${e.pageX + 10}px`;
+    tooltip.style.top = `${e.pageY + 10}px`;
+    tooltip.style.opacity = 1;
+  });
+
+  contactBtn.addEventListener('mouseleave', () => {
+    tooltip.style.opacity = 0;
+  });
+});
